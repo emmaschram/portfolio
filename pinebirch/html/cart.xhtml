@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0" />
+    <title>Pine&amp;Birch | Handcrafted Wooden Toys</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animsition.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/animsition.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+        <headReplace metal:use-macro="head.xhtml/meta_head"></headReplace>
+      <nav>
+        <ul class="nav">
+          <li><a class="animsition-link" href="index.php">store</a></li>
+          <li><a class="animsition-link" href="about.php">about</a></li>
+          <li><a class="animsition-link" href="contact.php">contact</a></li>
+          <li><a class="animsition-link selected" href="cart.php">cart</a></li>
+        </ul>
+      </nav>
+      <hr/>
+    </header>
+    <section class="animsition" id="cartsection">
+        
+        <div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div id="shoppingCart">
+      
+    
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+
+        <script src="./js/cart.js"></script>
+ 
+    <div class="push"></div>
+    </section>
+    <footerReplace metal:use-macro="footer.xhtml/page_footer">
+    </footerReplace>
+  </body>
+</html>

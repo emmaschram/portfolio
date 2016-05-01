@@ -1,0 +1,1018 @@
+/*SITEWIDE STYLES*/
+body {
+    font-family: 'Yantramanav', 'Helvetica Neue', sans-serif;
+    font-weight:300; 
+}
+
+/*HEADER STYLES*/
+
+#signature {
+    width:135px;
+}
+
+nav {
+    position:fixed;
+    z-index:1;
+    top:0;
+    background-color:black;
+    width:100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 12px 0 10px -5px;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display:inline;
+  font-size: 1.0em;
+  padding: 0 10px;
+  color: white;
+  text-shadow:
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color:#dbdbdb;
+}
+
+
+/*INDEX PAGE*/
+
+h3, h1 {
+  font-weight:300; 
+  color: #fff;
+  padding: 5px 0;
+  background-color: #000;
+  text-align: center;
+}
+
+h3 {
+   font-size: 17pt; 
+}
+
+#port1 a {
+  text-decoration: none;
+  color: white;
+}
+
+#port1 a:hover {
+  color:#dbdbdb;
+}
+
+#port2 {
+ opacity:0.5;
+}
+
+#port2 a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#port2 a:hover {
+  color:#dbdbdb;
+}
+
+
+.imgbg {
+   background-size:cover;
+   background-image: url('../images/possiblebg.jpg');
+   height: 100vh;
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+   background-position:center;
+}
+
+.bgcloud{
+   background-image: url('../images/cloud.png');
+   height: 100vh;
+   background-position:0px 0px;
+   background-repeat: repeat-x;   
+   animation: animatedBackground 25s linear infinite; 
+   background-size:120%;
+ 
+}
+
+@keyframes animatedBackground {
+    0% {background-position: 0 0; }
+	50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+
+.bgcloud2{
+   background-image: url('../images/cloud2.png');    
+   height: 100vh;
+   background-position:0px 0px;
+   background-repeat: repeat-x;    
+   animation: animatedBackground 25s linear infinite;  
+   background-size:120%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -175px;
+  margin-left: -175px;
+}
+
+.blacksquare {
+    text-align: center;
+    width: 350px;
+    height:350px;
+    background:black;
+}
+
+#signaturemain {
+ width:80%;
+ margin-top: 38px;
+}
+
+hr {
+margin-bottom: -5%;
+margin-top: -5%;
+width:50%;
+}
+
+#maintitle {
+   font-size:20pt;
+   margin-top:-2%;
+}
+
+#maintitle a {
+    text-decoration: none;
+    color:white   
+}
+
+#maintitle a:hover {
+  color:#dbdbdb;
+}
+
+
+/* GRID */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.leftgrid {
+    background-color: #1d1d1d;
+    height:500px;
+}
+
+.rightgrid {
+    background-color: #e0e0e0;
+    height:500px;
+    text-align: center;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 50%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+/*ABOUT PAGE*/
+
+.abouttitle {
+    background-color: white;
+    color:black;
+    font-weight:100; 
+}
+
+#abouthr {
+    margin-bottom: 3%;
+    margin-top: -1%;
+    width:5%;
+}
+
+
+#about {
+    text-align: center;
+    clear:left;
+}
+
+.blackp {
+    color:black;
+    margin: 0 auto;
+}
+
+#hi {
+    letter-spacing: 4px;
+    color:black;
+    background-color: white;
+}
+
+#emma {
+    width:15%;  
+    padding-bottom: 2%; 
+}
+
+  #contacttextarea {
+     margin-right:-200px;    
+    }
+    
+    
+
+/*WORK PAGE*/
+
+.rightgrid:hover img {
+    transition: opacity .3s ease; 
+    opacity: .3;  
+    cursor:pointer;
+}
+
+.readmore {
+    color:black;
+    font-size:20pt;
+    margin-top:-170px;
+    margin-left: 19%;
+    cursor:pointer;
+    position:absolute;
+}
+.mainreadmore {
+    font-size:14pt;
+    color:#b7eac1;
+}
+
+.mainreadmore:hover {
+    color:#539b62;
+    cursor:pointer;
+    
+}
+
+
+#left {
+    float:left;
+    background-color: #1d1d1d;
+    width:50%;
+    height:500px;
+}
+
+#right {
+    float:left;
+    background-color: #e0e0e0;
+    width:50%;
+    height:500px;
+    text-align: center;
+}
+
+#nobgtitle {
+    /*font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    background-color:  #1d1d1d; 
+    margin-top:140px;
+    letter-spacing: 4px;
+}
+
+p {
+    text-align: center; 
+    color:white;
+    line-height: 1.5;
+}
+
+#vanhikeimg {
+    margin-top:100px;
+    width:438px;
+    height:268px;
+}
+
+#staircaseimg {
+    margin-top:-10px;
+    width:256px;
+    height:440px;
+}
+
+#illustratorimg {
+    margin-top:35px;
+    width:85%; 
+}
+
+.staircaseimg {
+    margin-top:4%;
+    width:36%;
+    padding:2%;
+    display:inline-block;
+}
+
+.staircaseimg2 {
+    width:35%;
+    padding:2%;
+    margin-top:5px;
+    display:inline-block;
+}
+
+#photoshopimg1 {
+    width:40%;  
+    padding:2%;
+    margin-top:20px;
+}
+
+#photoshopimg2 {
+    width:35%; 
+    padding:2%;
+    margin-top:20px;
+}
+
+
+/*WORK POP-UP*/
+
+#invisidiv {
+    height:100%;
+    width:100%;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+}
+
+.popupscreen {
+  width:97%;
+  height: 80%;
+  position:fixed;
+  top:80px;
+  overflow:scroll;
+  background-color:#fff;
+  border: 3px solid #d3d3d3;
+  margin-left:1.5%;
+}
+
+#popupscreenbig {
+    height:88%;   
+    margin-top:-1%;
+}
+
+.photoshopinfo {
+    color:black;
+    text-align:left;
+    margin-left:2%;
+    margin-top:3%;
+}
+
+
+#popupstair {
+    width:70%;
+    margin-left:-6%;
+    margin-top:2%;
+}
+
+.popuptitle {
+    letter-spacing: 4px;
+    text-align: left;
+    font-size:25pt;
+    margin-top:4%;
+}  
+
+.popupimg {
+   margin-top:5%;
+   width:90%;
+}
+
+.popupimg2 {
+   margin-top:3%;
+   width:120%;
+}
+
+.popupimgb {
+ margin-top:3%;
+ width:80%;   
+}
+
+#valencard {
+ width:70%; 
+ margin-top:-1px;
+}
+
+#outsideimgs {
+   margin-top:100px; 
+}
+
+.leftdiv {
+  width:33.3%;
+  float:left;
+  text-align:center;
+}
+
+.middlediv {
+  width:33.3%;
+  float:left;
+  text-align:center;
+}
+
+.rightdiv {
+  width:33.3%;
+  float:left;
+  text-align:center;
+}
+
+#left2 {
+    float:left;
+    width:50%;
+    text-align: center;
+}
+
+#right2 {
+    float:left;
+    width:50%;
+    text-align: center;
+}
+
+#phototitle {
+  margin-left:2%;
+  margin-top:1%;
+  margin-bottom:-1%;
+}
+
+
+.popupdescription {
+  line-height: 1.3em;
+  color:black;
+  text-align: left;
+}
+
+.popupbutton {
+  color: #02438e;
+  text-decoration: none;
+}
+
+.popupbutton:hover {
+  color: #02438e;
+  text-decoration: underline;
+}
+
+.closebutton {
+  z-index:2;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  position:absolute;
+  right: 2px;
+  top: -10px;
+}
+
+.closebutton:hover {
+  cursor: pointer;
+  color: #02438e;
+  
+}
+
+#apreslogo {
+ margin-top:3%;
+ width:30%;
+
+}
+
+
+/*CONTACT PAGE*/
+
+/*FORM*/
+
+
+#contact-area {
+	width: 300px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 400px;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: .5px solid #000;
+}
+
+#contact-area textarea {
+	height: 80px;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+    float:right;
+    background-color:#bfbfbf;
+    margin-right:-112px;
+}
+
+#contact-area input.submit-button:hover {
+	width: 100px;
+    float:right;
+    background-color:#e8e8e8;
+
+}
+
+label {
+	float: left;
+	padding-top: 5px;
+    padding-bottom: 5px;
+	font-size: 1em;
+}
+
+/*FORM*/
+
+#contact {
+ margin-top:30px;
+}
+
+#imgtree {
+  background-size: cover;
+  background-image: url('../images/trees.png');
+  height:100%;
+}
+
+.whitediv {
+    text-align: center;
+    width:400px;
+    height:400px;
+    background:white; 
+    margin-bottom:30px;
+}
+
+.aboutcontainer {
+  display:flex;
+  justify-content: center;
+}
+
+#contacttitle {
+ padding-top:4px;   
+}
+
+#sociallogo {
+ width:10%;
+ padding-top:5px;
+}
+
+#emailme2 {
+    text-decoration: underline;
+    font-size:14pt;
+    cursor: pointer;
+}
+
+#emailme2 a {
+ color:black;   
+}
+
+#emailme2 a:hover {
+   color:#78b484;   
+}
+
+/*WORK PAGE*/
+
+#worksection {
+    margin-top:10%;
+}
+
+#worktitle {
+    text-align: left;
+    padding-left:2%;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    background-color:  #fff; 
+    letter-spacing: 4px;
+    color:black;
+}
+
+.aboutwork {
+    padding-left:2%;
+    color:black; 
+    text-align: left;
+}
+
+.workimg {
+    width:90%;
+}
+
+#workleft {
+    float:left;
+    width:50%;
+    height:500px;
+}
+
+#workright {
+    float:left;
+    width:50%;
+    padding:0;
+    height:500px;
+    text-align: center;
+}
+
+.headerbg {
+  background-size: cover;
+  background-image: url('../images/headerbg.jpeg');
+  height: 12vh;
+}
+
+#infonav {
+ position:absolute;   
+}
+
+/*FOOTER*/
+footer {
+   clear:both;
+   bottom:0;
+   width:100%;
+   height:60px; 
+   background-color:#000;
+   text-align: center;
+    position:relative;
+}
+
+#footersig {
+    padding-top:25px;
+    width: 125px;
+}
+
+#footerdate {
+    color:#989696;
+    background:#000;
+    margin:0 0 0 -20px;
+    padding-bottom:25px;
+    font-size: .8em;
+}
+
+.footernav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.footernav ul li {
+    
+  list-style: none;
+  display:inline;
+  font-size: .8em;
+  padding: ;
+
+}
+
+.footernav ul li a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
+.footernav ul li a:hover {
+  color:#cbcaca;
+}
+
+.footernav {
+    position:relative;
+    background-color: black;
+}
+
+
+/********************************************
+MEDIA QUERY 1600px (biggest)
+********************************************/
+  
+@media only screen and (min-width :1400px) {
+
+    #illustratorimg {
+        width:595px;
+        height:464px;
+        margin-top:15px;
+    }
+
+    .staircaseimg {
+        margin-top:10px;
+        width:253px;
+        height:453px;
+    }
+
+    .staircaseimg2 {
+        margin-top:10px;
+        width:253px;
+        height:463px;
+    }
+
+    #photoshopimg1 {
+        width:320px;
+        height:437px;
+        margin-top:-7px;
+    }
+
+    #photoshopimg2 {
+        width:282px;
+        height:480px;
+        margin-top:-7px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+/********************************************
+MEDIA QUERY 768px
+********************************************/
+
+
+@media screen and (max-width:48rem) {
+    #emma {
+        width:20%; 
+    }
+    
+    .readmore {
+     margin-left:15%;   
+    }
+    
+    #vanhikeimg {
+        margin-top:150px;
+        width:388px;
+        height:218px;
+    }
+    
+    .staircaseimg {
+        margin-top:30%;
+        width:41%;
+    }
+
+    .staircaseimg2 {
+        margin-top:31%;
+        width:40%;
+    }
+    
+     #photoshopimg1 {
+        margin-top:40%;
+    }
+    
+    #illustratorimg {
+        margin-top:30%;   
+    }
+    
+    .stairtitle {
+        font-size:20pt;   
+    }
+    
+     
+    #popupstair {
+        width:90%;
+        margin-top:20px;
+        margin-left:-1%;
+    }
+    
+    #valencard {
+        width:90%;
+       
+    }
+    
+    #outsideimgs {
+        width:100%;
+    }
+    
+    
+    
+    
+    
+}
+
+/********************************************
+MEDIA QUERY 480px
+********************************************/
+
+
+@media screen and (max-width:30rem) {
+    #emma {
+      width:30%;
+  }
+    
+    #nobgtitle {
+        font-size:15pt;
+    }
+    
+    p {
+        font-size:11pt;
+        padding-left:3%;
+        padding-right:3%;
+    }
+    
+    #right:hover {
+        opacity:1;
+       
+    }   
+
+    #readmore {
+        margin-top:50px;
+        margin-left:5%;
+        opacity:1;
+        font-size:15pt;
+        cursor:pointer;
+    }   
+    
+    #left2 .dancerimg {
+        width:90%;  
+    }
+    
+    #right2 .dancerimg {
+        width:90%;  
+    }
+    
+    
+    .middlediv {
+        clear:left;
+    }
+    
+    .leftdiv {
+        float:right;
+        margin:0;
+    }
+
+    
+    #photoleft {
+        float:left;
+    }
+    
+    #photomiddle {
+       clear:none; 
+    }
+    
+    .popupdescription {
+        font-size:12px;
+    }
+    
+    .popupimg {
+        margin-top:5%;
+        width:190%;
+    }
+    
+    .popuptitle {
+        font-size:15pt;
+        margin-top:-260px;
+    }
+    
+    .pinetitle {
+         margin-top:-310px;
+         font-size:11pt;
+    }
+    
+    .aprestitle {
+        margin-top:-400px;   
+    }
+    
+    .stairtitle {
+        margin-top:-300px;
+        font-size:13pt;
+    }
+    
+    .stairtype {
+        float:left;
+        margin-left:80px;
+    }
+    
+    #popupstair {
+        width:150%;
+        margin-left:1%;
+    }
+    
+    .readmore {
+        margin-left: 15px;
+        margin-top:15px;
+    }
+    
+     #valencard {
+        width:100%;
+    }
+    
+    #outsideimgs {
+        width:100%;
+    }
+    
+    .illdiv {
+        float:left;   
+    }
+    
+    .leftgrid {
+    height:200px;
+        
+    }
+    
+    #nobgtitle {
+     margin-top:20px;   
+    }
+    
+    .mainreadmore {
+        font-size:12pt;
+    }
+    
+    
+    .rightgrid {
+    height:350px;
+       
+    }
+    
+    #vanhikeimg {
+        margin-top:70px;
+    }
+
+    #illustratorimg {
+        margin-top:35px;
+        width:85%; 
+    }
+
+    .staircaseimg {
+        margin-top:20px;
+    }
+
+    .staircaseimg2 {
+        margin-top:20px;
+    }
+
+    #photoshopimg1 {
+        margin-top:40px;
+    }
+
+    #photoshopimg2 {
+        margin-top:40px;
+    }
+    
+    .readmore {
+        margin-left:30%;
+        margin-top:-150px;
+    }
+    
+    nav ul li {
+      padding: 0 5px;
+    }
+    
+    #sociallogo {
+      width:10%;
+      padding-top:5px;
+    }
+    
+    #imgtree {
+      height:100%;
+    }
+
+    .whitediv {
+        height:380px;
+        position:relative;
+        width:100%;
+    }
+
+    #contact-area input, #contact-area textarea {
+	width: 300px;
+    }
+    
+    #contact-area input.submit-button {
+    margin-right:-12px;
+    }
+    
+    #contact-area {
+       margin-left:50px;
+    }
+    
+    footer {
+    position:relative;
+}
+    
+    
+  #contacttextarea {
+     margin-right:0px;    
+    }
+     
+  
+
+    
+} 
+
+  
